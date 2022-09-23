@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01.a标签的作用</title>
+    <base target="_blank" />
+    <style>
+      .item {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .google-link {
+        height: 100px;
+      }
+
+      .google-link img {
+        height: 100%;
+        border: 1px solid #ccc;
+      }
+
+      body {
+        height: 2000px;
+        position: relative;
+      }
+
+      #text {
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      1. 点击文字跳转
+      2. 点击图片跳转
+      3. 直接打开本地图片
+      4. 下载本地文件
+      5. 锚点
+      6. 发送邮件给
+     -->
+
+    <!-- 1. 点击文字跳转 -->
+    <a class="item" href="https://www.google.com">Google</a>
+
+    <br />
+
+    <!-- 2. 点击图片跳转  -->
+    <a class="item google-link" href="https://www.google.com">
+      <img src="./img/google.png" alt="" />
+    </a>
+
+    <!-- 3. 直接打开本地图片 -->
+    <a class="item" href="./img/cat.png">cat</a>
+
+    <!-- 4. 下载本地文件 -->
+    <a class="item" href="./img/cat.zip">download cat.zip</a>
+
+    <!-- 5. 锚点 -->
+    <a class="item" href="#text" class="item">anchor link</a>
+
+    <!-- 6. 发送邮件给 -->
+    <a class="item" href="mailto: cat@gmail.com">send email to cat@gmail.com</a>
+
+    <div id="text">text</div>
+  </body>
+</html>
