@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05.video标签的使用</title>
+  </head>
+  <body>
+    <!-- 1. 基本用法 -->
+    <!-- 2. 兼容用法 -->
+    <!-- 3. video的属性 -->
+    <!-- 4. preload属性值 -->
+
+    <!-- 1. 基本用法 -->
+    <video src="./cat.mp4" controls poster="./cat.png">
+      您的浏览器不支持html5的video元素
+    </video>
+
+    <!-- 2. 兼容用法 -->
+    <!-- 一般包括mp4和webm格式即可 -->
+    <video controls poster="./cat.png">
+      <source src="./cat.mp4"></source>
+      <source src="./cat.webm"></source>
+      您的浏览器不支持html5的video元素
+    </video>
+
+      <!-- 3. video的属性 -->
+      <!-- controls  autoplay  loop  poster  muteds  preload -->
+
+    <!-- 4. preload属性值 -->
+    <!-- 
+      auto      一旦页面加载，则开始加载音频/视频
+      metadata  当页面加载后仅加载音频/视频的元数据
+      none      页面加载后不应加载音频/视频 
+    -->
+  </body>
+</html>

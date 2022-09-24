@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02.input标签</title>
+  </head>
+  <body>
+    <!-- type="file"时限制文件类型 -->
+    <!-- 1. 只接受图片 -->
+    <!-- 2. 只接受jpg和png图片 -->
+    <!-- 3. 只接受音视频文件 -->
+
+    <!-- 1. 只接受图片 -->
+    <input type="file" accept="image/*" />
+
+    <!-- 2. 只接受jpg和png图片 -->
+    <input type="file" accept="image/jpg,image/png" />
+
+    <!-- 3. 只接受音视频文件 -->
+    <input type="file" accept="audio/*|video/*" />
+  </body>
+</html>

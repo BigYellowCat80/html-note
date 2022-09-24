@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09.网站logo的注意事项</title>
+
+    <style>
+      h1 {
+        height: 200px;
+        background-color: red;
+      }
+
+      .first img {
+        height: 100%;
+        border: 1px solid #ccc;
+        display: block;
+        box-sizing: border-box;
+      }
+
+      .first {
+        line-height: 1000px;
+        overflow: hidden;
+      }
+
+      .second img {
+        height: 100%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      .second {
+        text-indent: -9000em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 注意事项： -->
+    <!-- 1. 一般使用h1标签 -->
+    <!-- 2. h1标签里写网站名字或关键字 -->
+    <!-- 3. 文字需要隐藏，仅作SEO作用 -->
+
+    <!-- 方式1 -->
+    <h1 class="first">
+      <img src="./img/google.png" alt="" />
+      google
+    </h1>
+
+    <!-- 方式2 -->
+    <h1 class="second">
+      <img src="./img/google.png" alt="" />
+      google
+    </h1>
+  </body>
+</html>
